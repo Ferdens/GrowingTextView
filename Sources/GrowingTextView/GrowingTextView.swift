@@ -33,7 +33,7 @@ open class GrowingTextView: UITextView {
     @IBInspectable open var maxHeight: CGFloat = 0 {
         didSet { forceLayoutSubviews() }
     }
-    @IBInspectable open var placeholder: String? {
+    @IBInspectable open var customPlaceholder: String? {
         didSet { setNeedsDisplay() }
     }
     @IBInspectable open var placeholderColor: UIColor = UIColor(white: 0.8, alpha: 1.0) {
